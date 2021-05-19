@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <link rel="stylesheet"href="style.css">
+    </head>
+        <title> My Family Book</title>
+        <body>
+            <h1>My Family Book</h1>
+            <hr> <hr>
+            <img id="Family_img " src="35102136.jpg">
+            <h3 id="one">1."My Family Book"</h3>
+            <button type="button"onlick="family()">NEXT</button>
+
+            <hr>
+
+            <script>
+                var names=[
+                  "2. My Father (UTPAL KUMAR GHOSH)",
+                  "3. My Mother (RUMA GHOSH)",
+                  "4. My Sister (SHALMOLI GHOSH)",
+                  "5. Me (SUNANDINI GHOSH)",
+                    
+                
+                ];
+
+                var images=[
+                    "daddy.jpg",
+                    "mummy.jpg",
+                    "sister.jpg",
+                    "me.jpg",
+                ];
+                var i=0;
+                function famly(){
+                    document.getElementById("one").innerHTML=names[i];
+                    document.getElementById("Family_img").src=images[i];
+                    i++;
+                    if(i==4){
+                        i=0;
+                    }
+                }
+        </script>
+        </body>
+</html>
